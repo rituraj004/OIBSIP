@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    align-content: center;
+    background-color: #1d1f27;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+.header{
+    background-color: skyblue;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 100%;
+    height: 20px;
+    display:fixed;
+}
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #00acee; 
+     object-fit: cover;
+}
+.container {
+  display:flex;
+ 
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #ddd;
+}
+
+.social-icon img {
+  width: 25px;
+  height: 25px;
+}
+
+.about-section {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    max-width: 800px;
+    height: 1200px;
+
+}
+
+.skills-section {
+    color: white;
+    background-color: #1d1f27;
+    padding: 20px;
+    width: 220px;
+    line-height: 1.6;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.skills-category {
+
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.skills-category h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: blanchedalmond;
+    margin-bottom: 8px;
+}
+
+.skills-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-category li {
+    margin-left: 10px;
+}
+
+.skills-category p {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #FFFFFF; 
+    text-decoration: none;
+}
+
+a:active {
+    color: #FFFFFF; 
+}
+.section {
+    color: white;
+    margin-top: 200px;
+    line-height: 1.6;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #1d1f27;
+    margin-right: 10px;
+    margin-top: -595px;
+
+    }
+.section h2  {
+      color:blanchedalmond;
+      margin: auto;
+      font-weight: bold;
+
+
+    }
+
+    .education-item
+    {
+      align-items: flex-start;
+    }
+
+  
+    .details {
+      color: white;
+      align-items: center;
+    }
+
+    .school{
+      font-weight: bold;
+      align-content: center;
+      
+
+    }
+
+    .location {
+      color:white;
+      font-size: 14px;
+    }

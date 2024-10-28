@@ -1,0 +1,41 @@
+document.getElementById('convertBtn').addEventListener('click', function() {
+    const temperature = parseFloat(document.getElementById('temperature').value);
+    const fromUnit = document.getElementById('fromUnit').value;
+    const toUnit = document.getElementById('toUnit').value;
+    let result;
+
+    // Check if the input is a valid number
+    if (isNaN(temperature)) {
+        result = "Please enter a valid number.";
+    } else {
+        // Perform conversion based on selected units
+        if (fromUnit === toUnit) {
+            result = `${temperature} ${toUnit}`;
+        } else {
+            if (fromUnit === "Celsius") {
+                if (toUnit === "Fahrenheit") {
+                    result = (temperature * 9/5) + 32;
+                } else if (toUnit === "Kelvin") {
+                    result = temperature + 273.15;
+                }
+            } else if (fromUnit === "Fahrenheit") {
+                if (toUnit === "Celsius") {
+                    result = (temperature - 32) * 5/9;
+                } else if (toUnit === "Kelvin") {
+                    result = (temperature - 32) * 5/9 + 273.15;
+                }
+            } else if (fromUnit === "Kelvin") {
+                if (toUnit === "Celsius") {
+                    result = temperature - 273.15;
+                } else if (toUnit === "Fahrenheit") {
+                    result = (temperature - 273.15) * 9/5 + 32;
+                }
+            }
+            // Format the result to 2 decimal places
+            result = `${result.toFixed(2)} ${toUnit}`;
+        }
+    }
+    
+    // Display the result in the output section
+    document.getElementById('result').innerText = result;
+});
